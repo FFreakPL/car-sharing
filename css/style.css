@@ -220,9 +220,20 @@
     justify-content: space-between;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 1366px;
     background-color: rgba(0,0,0,0.2);
     height: 90px;
+}
+
+.page-header div.menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1088px;
+
+}
+div.container {
+    max-width: 1088px;
 }
 div p {
     display: inline;
@@ -253,14 +264,13 @@ div.title_text {
     margin-left: 5px;
     text-transform: uppercase;
 }
-nav {
-    margin-right: 131px;
+div.empty {
+    width: 100px;
 }
-
 li {
     display: inline;
     flex-direction: row;
-    margin-left: 60px;
+    margin-left: 10px;
 }
 
 li a{
@@ -282,7 +292,7 @@ li a:hover {
     background-position: bottom;
     justify-content: center;
     align-items: center;
-    width: 1366px;
+    max-width: 1366px;
     height: 807px;
     color: white;
     background-repeat: no-repeat;
@@ -308,6 +318,7 @@ li a:hover {
     font-weight: 900;
     text-transform: uppercase;
     z-index: 100;
+    max-width: 1088px;
 }
 
 .page-header h2 {
@@ -321,14 +332,38 @@ li a:hover {
     font-size: 16px;
     font-weight: 400;
     z-index: 100;
+    max-width: 1088px;
+}
+
+div.blog_container img {
+    margin: 0;
 }
 
 div.container_buttons {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
+    max-width: 1088px;
+    margin-top: 30px;
 }
 
+button.share {
+    padding: 22px 55px;
+    border-radius: 40px;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border-radius: 40px;
+    border: 0;
+    color: white;
+    margin-right: 25px;
+}
+button.features {
+    padding: 22px 55px;
+    border-radius: 40px;
+    border: 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    color: #FF0000;
+}
 div.container {
     position: absolute;
 }
@@ -370,19 +405,34 @@ div.container {
     font-family: "Nunito Sans";
 }
 .article-btn {
-    padding: 15px 45px;
-    border: 1px solid black;
-    color: black;
+    border-radius: 40px;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 0;
+    color: white;
+    margin-right: 25px;
+    padding: 13px 30px;
     display: inline-block;
     text-decoration: none;
-    border-radius: 50px;
-    font-family: sans-serif;
-    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Nunito Sans";
+    font-size: 14px;
 }
 
 .blog_container {
     margin: auto;
     display: flex;
     justify-content: space-around;
-    width: 930px;
+    max-width: 1088px;
+}
+
+main.blog div.blog-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 92px;
+    font-family: Nunito Sans;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
