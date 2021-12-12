@@ -213,10 +213,25 @@
     margin: 0;
     padding: 0;
 }
+
+.page-header div.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    height: 90px;
+}
 div p {
     display: inline;
     font-family: Nunito Sans;
     font-size: 35px;
+}
+
+div img {
+    margin-left: 141px;
 }
 
 div p.car {
@@ -239,11 +254,12 @@ div.title_text {
     text-transform: uppercase;
 }
 nav {
-    margin-right: 165px;
+    margin-right: 131px;
 }
 
 li {
     display: inline;
+    flex-direction: row;
     margin-left: 60px;
 }
 
@@ -252,31 +268,69 @@ li a{
     text-decoration: none;
     color: white;
     font-family: Nunito Sans;
+    padding: 34px;
 }
-header {
-    background-color: rgba(0,0,0);
-    opacity: 0.5;
+
+li a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.page-header {
     display: flex;
-    width: 1366px;
-    height: 93px;
-    justify-content: space-between;
+    background-image: url(../images/Image.jpg);
+    background-size: cover;
+    background-position: bottom;
+    justify-content: center;
     align-items: center;
-    padding: 15px;
-    border: 1px solid white;
+    width: 1366px;
+    height: 807px;
+    color: white;
+    background-repeat: no-repeat;
     position: relative;
 }
 
-main {
+.page-header::before {
+    content: "";
+    background-color: black;
+    opacity: 30%;
+    top: 0;
+    left: 0;
     position: absolute;
-    display: flex;
     width: 1366px;
     height: 807px;
 }
-div.container {
+
+.page-header h1 {
     display: flex;
-    justify-content: space-between;
-    width: 1088px;
-    height: 516px;
+    justify-content: center;
+    font-family: Nunito Sans;
+    font-size: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+    z-index: 100;
+}
+
+.page-header h2 {
+    display: flex;
+    justify-content: center;
+    width: 1046px;
+    height: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 100;
+}
+
+div.container_buttons {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+div.container {
+    position: absolute;
 }
 
 .article {
@@ -326,7 +380,7 @@ div.container {
     font-weight: 700;
 }
 
-.page-content .container {
+.blog_container {
     margin: auto;
     display: flex;
     justify-content: space-around;
