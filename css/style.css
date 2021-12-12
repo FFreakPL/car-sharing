@@ -5,6 +5,8 @@
 }
 div.container {
     display: flex;
+    width: 1033px;
+    height: 516px;
 }
 
 .article {
@@ -13,7 +15,7 @@ div.container {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    max-width: 290px;
+    max-width: 352px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -39,7 +41,7 @@ div.container {
 .article-btn {
     padding: 15px 45px;
     border: 1px solid black;
-    color: white;
+    color: black;
     display: inline-block;
     text-decoration: none;
     border-radius: 50px;
