@@ -436,3 +436,96 @@ main.blog div.blog-header{
     text-transform: uppercase;
     font-weight: 700;
 }
+
+div.service-header-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Nunito Sans;
+    font-size: 35px;
+    font-weight: 700;
+    background-color: #28272C;
+    max-width: 1088px;
+    color: white;
+}
+
+article.service-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 231px;
+    height: 361px;
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+
+div.service_container {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1366px;
+    background-color: #28272C;
+}
+
+.service-photo-img {
+    height: 170px;
+    width: 170px;
+    flex-grow: 0;
+    padding: 0;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.service-article-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 10px 0;
+    flex-grow: 0;
+    font-size: 19px;
+    font-family: Nunito Sans;
+    color: white;
+}
+.service-article-text {
+    color: #B0AEAB;
+    margin-bottom: 10px;
+    height: auto;
+    flex-grow: 1;
+    font-size: 14px;
+    font-family: "Nunito Sans";
+}
+.service-article-btn {
+    border-radius: 40px;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 0;
+    color: white;
+    padding: 13px 30px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+}
+
+.blog_container {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1088px;
+}
+
+div.service-header {
+    display: inline;
+    color: white;
+    font-family: "Nunito Sans";
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 60px;
+    max-width: 1088px;
+}
